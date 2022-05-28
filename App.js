@@ -2,6 +2,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './src/pages/Home'
+import Video from './src/pages/Video'
 import SegundaPagina from './src/pages/SegundaPagina'
 
 const Stack = createNativeStackNavigator();
@@ -17,6 +18,10 @@ function App() {
         <Stack.Screen
           name="SegundaPagina"
           component={SegundaPagina}
+        />
+        <Stack.Screen
+          name="Video"
+          component={Video}
         />
       </Stack.Navigator>
     </NavigationContainer>
