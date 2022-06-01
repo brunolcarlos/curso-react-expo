@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './src/pages/Home'
 import Video from './src/pages/Video'
 import SegundaPagina from './src/pages/SegundaPagina'
+import FlatListPage from './src/pages/FlatListPage'
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,10 @@ function App() {
         <Stack.Screen
           name="Video"
           component={Video}
+        />
+        <Stack.Screen
+          name="FlatListPage"
+          component={FlatListPage}
         />
       </Stack.Navigator>
     </NavigationContainer>
